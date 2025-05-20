@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">App_Gestion_De_Pacientes</string>
+
+
+
+    <!-- Registro de Paciente -->
+    <string name="activityregistrarpaciente_tv_titulo">Registrar Paciente</string>
+
+    <string name="activityregistrarpaciente_et_dni_hint">DNI</string>
+    <string name="activityregistrarpaciente_et_nombres_hint">Nombres</string>
+    <string name="activityregistrarpaciente_et_apellidos_hint">Apellidos</string>
+    <string name="activityregistrarpaciente_spn_sexo_hint">Sexo</string>
+    <string name="activityregistrarpaciente_et_fecha_nacimiento_hint">Fecha de Nacimiento</string>
+    <string name="activityregistrarpaciente_et_telefono_hint">Teléfono</string>
+    <string name="activityregistrarpaciente_et_correo_hint">Correo Electrónico</string>
+    <string name="activityregistrarpaciente_et_direccion_hint">Dirección</string>
+
+    <string name="activityregistrarpaciente_btn_guardar">Guardar</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+</resources>
