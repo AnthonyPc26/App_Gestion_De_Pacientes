@@ -12,11 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App_Gestion_De_Pacientes"
         tools:targetApi="31" >
-        <activity
-            android:name=".activities.MenuActivity"
-            android:exported="false"
-            android:label="@string/title_activity_menu"
-            android:theme="@style/Theme.App_Gestion_De_Pacientes.NoActionBar" />
+
         <activity
             android:name=".activities.PerfilRegistrarPacientesActivity"
             android:exported="false" />
