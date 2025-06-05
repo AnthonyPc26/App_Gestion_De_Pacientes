@@ -1,4 +1,4 @@
-package com.sise.app_gestion_de_pacientes;
+package com.sise.app_gestion_de_pacientes.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,12 +11,11 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.sise.app_gestion_de_pacientes.activities.MenuActivity;
-import com.sise.app_gestion_de_pacientes.activities.PerfilRegistrarPacientesActivity;
+import com.sise.app_gestion_de_pacientes.R;
 
-public class MainActivity extends AppCompatActivity {
+public class MenuActivity extends AppCompatActivity {
 
-    private final String TAG = MainActivity.class.getName();
+    private final String TAG = MenuActivity.class.getName();
 
 
     @Override
@@ -24,8 +23,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Log.i(TAG,"Ejecutado metodo onCreate()");
 
+
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_menu);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -34,9 +34,8 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-
-    public void onClickMenuActivity(View view){
-        Intent intent= new Intent(this, MenuActivity.class);
+    public void onClickPerfilRegistrarPacientes(View view){
+        Intent intent= new Intent(this, PerfilRegistrarPacientesActivity.class);
         startActivity(intent);
         //   finish();
     }
@@ -82,4 +81,5 @@ public class MainActivity extends AppCompatActivity {
         Log.i(TAG,"Ejecutado metodo onDestroy()");
 
     }
+
 }
