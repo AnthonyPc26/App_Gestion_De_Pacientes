@@ -4,7 +4,16 @@
 ![Estado](https://img.shields.io/badge/Estado-En%20Desarrollo-orange?style=for-the-badge)
 ![Plataforma](https://img.shields.io/badge/Plataforma-Android-green?style=for-the-badge)
 
-🩺 *Aplicación médica móvil para profesionales que trabajan bajo presión.*
+<table>
+  <tr>
+    <td>
+      🩺 <em>Aplicación médica móvil para profesionales que trabajan bajo presión.</em>
+    </td>
+    <td>
+      <img src="https://raw.githubusercontent.com/AnthonyPc26/App_Gestion_De_Pacientes-GRUPO5/main/hello-android.gif" width="100">
+    </td>
+  </tr>
+</table>
 
 ---
 ## 👥 Integrantes del Proyecto
@@ -18,6 +27,8 @@
   <li><strong>Ramos Chavez, Jesus</strong></li>
   <li><strong>Diaz Castaneda, Jose Manuel</strong></li>
   <li><strong>Ramirez Chacchi, Jordy</strong></li>
+ <li><strong>Leon Chuquimajo, Roberth</strong></li>
+
 </ul>
 
 </td>
