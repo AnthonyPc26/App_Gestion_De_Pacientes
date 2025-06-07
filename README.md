@@ -74,13 +74,12 @@ Desarrollar una aplicación móvil multiplataforma que permita a los profesional
 
 | Bienvenida | Menú Principal | Registrar Paciente |
 |-----------|----------------|---------------------|
-| ![Bienvenida](https://raw.githubusercontent.com/AnthonyPc26/App_Gestion_De_Pacientes-GRUPO5/8b66bc825c6198e3c96d1ac90d691d8bdb99b220/Bienvenida.png) | ![Menú](https://i.imgur.com/X7P5V4E.png) | ![Registro](https://i.imgur.com/X7P5V4E.png) |
+| ![Bienvenida](https://raw.githubusercontent.com/AnthonyPc26/App_Gestion_De_Pacientes-GRUPO5/8b66bc825c6198e3c96d1ac90d691d8bdb99b220/Bienvenida.png) | ![Menú](https://raw.githubusercontent.com/AnthonyPc26/App_Gestion_De_Pacientes-GRUPO5/1224c5a46865d35ea19f2df9efa64bb45200ff3c/menu.png) | ![Registro](https://raw.githubusercontent.com/AnthonyPc26/App_Gestion_De_Pacientes-GRUPO5/1224c5a46865d35ea19f2df9efa64bb45200ff3c/registrarpacientes.png) |
 
 | Historial Médico | Citas Médicas | Configuración |
 |------------------|---------------|----------------|
 | ![Historial](https://i.imgur.com/kKJDyGL.png) | ![Citas](https://i.imgur.com/Y7HaSgW.png) | ![Configuración](https://i.imgur.com/BnWWycn.png) |
 
----
 
 ## 🛠️ Aspectos Técnicos del Proyecto
 
