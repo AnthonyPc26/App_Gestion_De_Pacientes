@@ -10,7 +10,7 @@
       🩺 <em>Aplicación médica móvil para profesionales que trabajan bajo presión.</em>
     </td>
     <td>
-      <img src="https://raw.githubusercontent.com/AnthonyPc26/App_Gestion_De_Pacientes-GRUPO5/main/hello-android.gif" width="100">
+<img src="https://raw.githubusercontent.com/AnthonyPc26/App_Gestion_De_Pacientes-GRUPO5/d7c1c679cb3fcd71708c4f3beec50243434369e8/ImagenesReadme/hello-android.gif" width="200">
     </td>
   </tr>
 </table>
@@ -33,7 +33,8 @@
 
 </td>
 <td>
-  <img src="https://raw.githubusercontent.com/AnthonyPc26/App_Gestion_De_Pacientes-GRUPO5/main/grupo5.gif" width="400">
+<img src="https://raw.githubusercontent.com/AnthonyPc26/App_Gestion_De_Pacientes-GRUPO5/main/ImagenesReadme/grupo5.gif" width="500">
+
 </td>
   </tr>
 </table>
