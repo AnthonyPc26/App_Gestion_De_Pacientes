@@ -51,23 +51,34 @@
 - 🛏️ Unidades de Cuidados Intensivos (UCI)  
 - 🏃 Clínicas de atención rápida
 
-MediTrack permite acceder y actualizar datos clínicos de forma instantánea, sin necesidad de registros en papel o sistemas lentos. Mejora la trazabilidad del paciente, reduce errores administrativos y facilita la coordinación médica.
+🔐 Nota sobre autenticación:
+Dado que MediTrack está pensada para entornos de atención inmediata y colaborativa, no se ha implementado un sistema de login de usuarios. Esto se debe a que:
+
+El enfoque está en agilidad y simplicidad de uso, evitando pasos innecesarios.
+
+La app se asume como uso interno del personal médico que comparte un mismo dispositivo o entorno supervisado.
+
+En versiones futuras se podría incluir login si el entorno requiere trazabilidad individual por profesional.
+
 
 ---
 
 ## 🎯 Objetivo General
 
-Desarrollar una aplicación móvil multiplataforma que permita a los profesionales de la salud **gestionar información clínica y administrativa de pacientes** en zonas de emergencia, asegurando rapidez, precisión y disponibilidad de los datos en todo momento.
+Desarrollar una aplicación móvil que permita a los profesionales de la salud gestionar y acceder rápidamente a la información médica y de localización de los pacientes, incluyendo historial clínico detallado, citas médicas y ubicación interna en tiempo real, contribuyendo a una atención más rápida, organizada y segura en contextos de emergencia.
+
 
 ---
 
 ## 🎯 Objetivos Específicos
 
-- ✅ Registro ágil de nuevos pacientes con datos básicos  
-- ✅ Visualización y actualización de historial médico  
-- ✅ Gestión de citas médicas en tiempo real  
-- ✅ Ubicación interna del paciente dentro del centro médico  
-- ✅ Opciones de configuración: modo oscuro, alertas, accesibilidad
+- ✅ Permitir el registro ágil de pacientes con sus datos personales y antecedentes médicos importantes (alergias, enfermedades crónicas).
+- ✅ Visualizar y actualizar de forma estructurada el historial médico, incluyendo diagnósticos, tratamientos, observaciones y medicamentos prescritos.
+- ✅ Gestionar citas médicas con registro de fecha, hora y motivo de atención.
+- ✅ Actualizar y consultar la ubicación del paciente dentro del centro médico para mejorar la trazabilidad.
+- ✅ Incluir configuraciones de accesibilidad como modo oscuro, notificaciones o alertas según la necesidad del profesional de salud.
+
+
 
 ---
 
@@ -86,14 +97,14 @@ Desarrollar una aplicación móvil multiplataforma que permita a los profesional
 
 | 📲 Frontend (App) | ⚙️ Backend (API REST) | 🗄️ Base de Datos |
 |------------------|------------------------|------------------|
-| Android Studio (XML / Jetpack Compose) | Node.js + Express | PostgreSQL |
+| Android Studio  | Node.js + Express | PostgreSQL |
 | Material Design | TypeScript | TypeORM |
 | Gradle | Swagger | pgAdmin |
 
 ### 🔧 Herramientas Adicionales:
 - Figma (Diseño UI/UX)  
 - Git y GitHub (Control de versiones)  
-- Postman / Insomnia (Testeo de API)  
+- Postman /  (Testeo de API)  
 - Visual Studio Code
 
 ---
