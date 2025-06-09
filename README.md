@@ -121,7 +121,7 @@ Desarrollar una aplicación móvil que permita a los profesionales de la salud g
 
 ## 🌐 Enlace al Repositorio del Backend
 
-🔗 [Repositorio Backend en GitHub](https://github.com/AnthonyPc26/gestion_inventarios)
+🔗 [Repositorio Backend en GitHub](https://github.com/josma18/gestion_paciente_api)
 
 ---
 
