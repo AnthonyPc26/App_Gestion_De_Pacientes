@@ -16,28 +16,25 @@
 </table>
 
 ---
-## 👥 Integrantes del Proyecto
+## 🧑‍🎓 Integrantes del Proyecto
 
 <table>
   <tr>
+    <td style="vertical-align: top; padding-right: 30px;">
+      <ul style="list-style: none; padding: 0; font-size: 16px; line-height: 1.8;">
+        <li> 👨‍💻 <strong>Pachas Contreras, Anthony</strong></li>
+        <li> 👨‍💻 <strong>Ramos Chavez, Jesus</strong></li>
+        <li> 👨‍💻 <strong>Diaz Castaneda, Jose Manuel</strong></li>
+        <li> 👨‍💻 <strong>Ramirez Chacchi, Jordy</strong></li>
+        <li> 👨‍💻 <strong>Leon Chuquimajo, Roberth</strong></li>
+      </ul>
+    </td>
     <td>
-
-<ul>
-  <li><strong>Pachas Contreras, Anthony</strong></li>
-  <li><strong>Ramos Chavez, Jesus</strong></li>
-  <li><strong>Diaz Castaneda, Jose Manuel</strong></li>
-  <li><strong>Ramirez Chacchi, Jordy</strong></li>
- <li><strong>Leon Chuquimajo, Roberth</strong></li>
-
-</ul>
-
-</td>
-<td>
-<img src="https://raw.githubusercontent.com/AnthonyPc26/App_Gestion_De_Pacientes-GRUPO5/main/ImagenesReadme/grupo5.gif" width="500">
-
-</td>
+      <img src="https://raw.githubusercontent.com/AnthonyPc26/App_Gestion_De_Pacientes-GRUPO5/main/ImagenesReadme/grupo.gif" width="450">
+    </td>
   </tr>
 </table>
+
 
 
 ---
