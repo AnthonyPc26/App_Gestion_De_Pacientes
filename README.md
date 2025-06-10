@@ -16,7 +16,7 @@
 </table>
 
 ---
-## 🧑‍🎓 Integrantes del Proyecto
+## 🧑‍🎓 Integrantes del Proyecto - Grupo 5
 
 <table>
   <tr>
