@@ -5,10 +5,16 @@ import java.io.DataOutputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import android.os.StrictMode;
 
 public class HttpUtil {
+    private HttpUtil() {
+
+    };
     public static String GET(String baseUrl, String path) {
         try {
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+            StrictMode.setThreadPolicy(policy);
             URL url = new URL(baseUrl+path);
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
 
@@ -34,6 +40,8 @@ public class HttpUtil {
 
     public static String POST(String baseUrl, String path, String body) {
         try {
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+            StrictMode.setThreadPolicy(policy);
             URL url = new URL(baseUrl+path);
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
 

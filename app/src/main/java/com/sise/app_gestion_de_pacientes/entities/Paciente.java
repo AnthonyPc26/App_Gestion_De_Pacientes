@@ -111,4 +111,8 @@ public class Paciente {
     public void setFechaRegistro(Date fechaRegistro) {
         this.fechaRegistro = fechaRegistro;
     }
+
+    public static Paciente builder(){
+        return new Paciente();
+    }
 }
