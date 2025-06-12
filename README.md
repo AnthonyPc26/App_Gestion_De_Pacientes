@@ -83,7 +83,7 @@ Desarrollar una aplicación móvil que permita a los profesionales de la salud g
 
 | Bienvenida | Menú Principal | Registrar Paciente |
 |-----------|----------------|---------------------|
-| ![Bienvenida](https://raw.githubusercontent.com/AnthonyPc26/App_Gestion_De_Pacientes-GRUPO5/8b66bc825c6198e3c96d1ac90d691d8bdb99b220/Bienvenida.png) | ![Menú](https://raw.githubusercontent.com/AnthonyPc26/App_Gestion_De_Pacientes-GRUPO5/1224c5a46865d35ea19f2df9efa64bb45200ff3c/menu.png) | ![Registro](https://raw.githubusercontent.com/AnthonyPc26/App_Gestion_De_Pacientes-GRUPO5/1224c5a46865d35ea19f2df9efa64bb45200ff3c/registrarpacientes.png) |
+| ![Bienvenida](https://raw.githubusercontent.com/AnthonyPc26/App_Gestion_De_Pacientes-GRUPO5/8b66bc825c6198e3c96d1ac90d691d8bdb99b220/Bienvenida.png) | ![Menú](https://github.com/AnthonyPc26/App_Gestion_De_Pacientes/blob/d14c5721185afccb7e185722515bb23b8fd71def/ImagenesReadme/menucompleto.jpg) | ![Registro](https://raw.githubusercontent.com/AnthonyPc26/App_Gestion_De_Pacientes-GRUPO5/1224c5a46865d35ea19f2df9efa64bb45200ff3c/registrarpacientes.png) |
 
 | Registrar Médico | Historial Médico | Citas Médicas |
 |------------------|------------------|---------------|
