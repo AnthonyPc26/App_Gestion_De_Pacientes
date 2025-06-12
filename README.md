@@ -105,7 +105,6 @@ Desarrollar una aplicación móvil que permita a los profesionales de la salud g
 | Gradle | Swagger | pgAdmin |
 
 ### 🔧 Herramientas Adicionales:
-- Figma (Diseño UI/UX)  
 - Git y GitHub (Control de versiones)  
 - Postman /  (Testeo de API)  
 - Visual Studio Code
