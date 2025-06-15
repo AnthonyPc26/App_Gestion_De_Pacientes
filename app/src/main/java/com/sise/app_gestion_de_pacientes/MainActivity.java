@@ -11,6 +11,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.sise.app_gestion_de_pacientes.activities.LoginActivity;
 import com.sise.app_gestion_de_pacientes.activities.MenuActivity;
 import com.sise.app_gestion_de_pacientes.activities.PerfilRegistrarPacientesActivity;
 
@@ -35,11 +36,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void onClickMenuActivity(View view){
-        Intent intent= new Intent(this, MenuActivity.class);
+    public void onClickLoginActivity(View view){
+        Intent intent= new Intent(this, LoginActivity.class);
         startActivity(intent);
         //   finish();
     }
+
 
     @Override
     protected void onStart() {
