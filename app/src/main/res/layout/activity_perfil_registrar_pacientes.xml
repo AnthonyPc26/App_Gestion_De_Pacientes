@@ -38,14 +38,21 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="16dp">
-
-            <EditText
-                android:id="@+id/et_dni"
+            <Spinner
+                android:id="@+id/spn_tipo_documento"
+                style="@style/Spinner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="DNI"
+                android:layout_marginTop="12dp" />
+
+            <EditText
+                android:id="@+id/et_numero_documento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/activityregistrarpaciente_et_dni_hint"
                 android:inputType="number"
-                style="@style/EditText"/>
+                style="@style/EditText"
+                android:layout_marginTop="12dp"/>
 
             <EditText
                 android:id="@+id/et_nombres"

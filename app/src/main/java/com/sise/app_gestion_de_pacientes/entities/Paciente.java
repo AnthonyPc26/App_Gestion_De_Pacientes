@@ -1,10 +1,9 @@
 package com.sise.app_gestion_de_pacientes.entities;
-
 import java.util.Date;
-
 public class Paciente {
     private Integer idPaciente;
-    private String dni;
+    private String tipoDocumento;
+    private String numeroDocumento;
     private String nombres;
     private String apellidoPaterno;
     private String apellidoMaterno;
@@ -24,12 +23,20 @@ public class Paciente {
         this.idPaciente = idPaciente;
     }
 
-    public String getDni() {
-        return dni;
+    public String getTipoDocumento() {
+        return tipoDocumento;
     }
 
-    public void setDni(String dni) {
-        this.dni = dni;
+    public void setTipoDocumento(String tipoDocumento) {
+        this.tipoDocumento = tipoDocumento;
+    }
+
+    public String getNumeroDocumento() {
+        return numeroDocumento;
+    }
+
+    public void setNumeroDocumento(String numeroDocumento) {
+        this.numeroDocumento = numeroDocumento;
     }
 
     public String getNombres() {

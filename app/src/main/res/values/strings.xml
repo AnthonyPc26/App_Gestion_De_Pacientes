@@ -10,6 +10,13 @@
         <item>Femenino</item>
         <item>Otro</item>
     </string-array>
+    <string-array name="tipo_documento_array">
+        <item>Seleccione tipo</item>
+        <item>DNI</item>
+        <item>Pasaporte</item>
+        <item>Carnet de Extranjería</item>
+    </string-array>
+    <string name="activityregistrarpaciente_spn_tipo_documento_hint">Tipo de Documento</string>
     <string name="activityregistrarpaciente_et_dni_hint">DNI</string>
     <string name="activityregistrarpaciente_et_nombres_hint">Nombres</string>
     <string name="activityregistrarpaciente_et_apellidos_hint">Apellidos</string>
