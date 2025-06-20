@@ -48,14 +48,13 @@
 - 🛏️ Unidades de Cuidados Intensivos (UCI)  
 - 🏃 Clínicas de atención rápida
 
-🔐 Nota sobre autenticación:
+🔐
 Dado que MediTrack está pensada para entornos de atención inmediata y colaborativa, no se ha implementado un sistema de login de usuarios. Esto se debe a que:
 
 El enfoque está en agilidad y simplicidad de uso, evitando pasos innecesarios.
 
 La app se asume como uso interno del personal médico que comparte un mismo dispositivo o entorno supervisado.
 
-En versiones futuras se podría incluir login si el entorno requiere trazabilidad individual por profesional.
 
 
 ---
