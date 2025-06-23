@@ -10,6 +10,7 @@
         <item>Femenino</item>
         <item>Otro</item>
     </string-array>
+
     <string-array name="tipo_documento_array">
         <item>Seleccione tipo</item>
         <item>DNI</item>
@@ -25,8 +26,27 @@
     <string name="activityregistrarpaciente_et_telefono_hint">Teléfono</string>
     <string name="activityregistrarpaciente_et_correo_hint">Correo Electrónico</string>
     <string name="activityregistrarpaciente_et_direccion_hint">Dirección</string>
-
     <string name="activityregistrarpaciente_btn_guardar">Guardar</string>
+
+    <!-- Registro de Médico -->
+    <string name="activityregistrarmedico_tv_titulo">Registrar Médico</string>
+    <string name="activityregistrarmedico_et_numero_documento_hint">Número de Documento</string>
+    <string name="activityregistrarmedico_et_nombres_hint">Nombres</string>
+    <string name="activityregistrarmedico_et_apellidos_hint">Apellidos (paterno y materno)</string>
+    <string name="activityregistrarmedico_et_telefono_hint">Teléfono</string>
+    <string name="activityregistrarmedico_et_direccion_hint">Dirección</string>
+    <string name="activityregistrarmedico_spn_especialidad_hint">Especialidad</string>
+    <string name="activityregistrarmedico_btn_guardar">Guardar</string>
+
+    <string-array name="especialidad_array">
+        <item>Seleccione especialidad</item>
+        <item>Cardiología</item>
+        <item>Pediatría</item>
+        <item>Medicina General</item>
+        <item>Ginecología</item>
+        <item>Traumatología</item>
+    </string-array>
+
     <string name="title_activity_menu">MenuActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

@@ -49,6 +49,10 @@ public class MenuActivity extends AppCompatActivity {
         Intent intent = new Intent(this, PerfilRegistrarPacientesActivity.class);
         startActivity(intent);
     }
+    public void onClickPerfilRegistrarMedico(View view){
+        Intent intent = new Intent(this, PerfilRegistrarMedicoActivity.class);
+        startActivity(intent);
+    }
 
     @Override
     protected void onStart() {
