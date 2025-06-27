@@ -14,6 +14,7 @@ import androidx.lifecycle.ViewModelProvider;
 import com.sise.app_gestion_de_pacientes.R;
 import com.sise.app_gestion_de_pacientes.entities.Especialidad;
 import com.sise.app_gestion_de_pacientes.entities.Medico;
+import com.sise.app_gestion_de_pacientes.shared.Message;
 import com.sise.app_gestion_de_pacientes.viewmodel.MedicoViewModel;
 import com.sise.app_gestion_de_pacientes.viewmodel.EspecialidadViewModel;
 
@@ -85,9 +86,14 @@ public class PerfilRegistrarMedicoActivity extends AppCompatActivity {
 
         // Observador para resultado de inserción
         medicoViewModel.getInsertarMedicoStatus().observe(this, success -> {
-            String mensaje = success ? "¡Médico registrado correctamente!" : "Error al registrar médico.";
-            Toast.makeText(getApplicationContext(), mensaje, Toast.LENGTH_LONG).show();
+            if (success == null || !success) {
+                Toast.makeText(getApplicationContext(), Message.INTENTAR_MAS_TARDE, Toast.LENGTH_LONG).show();
+                return;
+            }
+            Toast.makeText(getApplicationContext(), "¡Médico registrado correctamente!", Toast.LENGTH_LONG).show();
+            finish(); // o navega a otra pantalla si corresponde
         });
+
     }
 
     public void onClickRegistrarMedico(View view) {

@@ -14,6 +14,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.sise.app_gestion_de_pacientes.R;
 import com.sise.app_gestion_de_pacientes.entities.Paciente;
+import com.sise.app_gestion_de_pacientes.shared.Message;
 import com.sise.app_gestion_de_pacientes.viewmodel.PacienteViewModel;
 
 import java.text.SimpleDateFormat;
@@ -54,15 +55,16 @@ public class PerfilRegistrarPacientesActivity extends AppCompatActivity {
 
         pacienteViewModel = new ViewModelProvider(this).get(PacienteViewModel.class);
 
-        pacienteViewModel.getInsertarPacienteStatus().observe(this, new Observer<Boolean>() {
-            @Override
-            public void onChanged(Boolean success) {
-                if (success != null) {
-                    String mensaje = success ? "¡Se ha insertado el Paciente correctamente!" : "¡Ocurrió un error al registrar!";
-                    Toast.makeText(getApplicationContext(), mensaje, Toast.LENGTH_LONG).show();
-                }
+        pacienteViewModel.getInsertarPacienteStatus().observe(this, success -> {
+            if (success == null || !success) {
+                Toast.makeText(this, Message.INTENTAR_MAS_TARDE, Toast.LENGTH_LONG).show();
+                return;
             }
+
+            Toast.makeText(this, "¡Paciente insertado correctamente!", Toast.LENGTH_LONG).show();
+            finish();
         });
+
     }
 
     public void onClickRegistrarPaciente(View view) {
