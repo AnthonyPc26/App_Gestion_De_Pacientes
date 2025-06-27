@@ -21,7 +21,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private EditText etUsuario, etContrasena;
     private Button btnLogin;
-    private TextView togglePassword;
+    // private TextView togglePassword; // ← COMENTADO: Ya no usamos ojito manual
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,12 +33,13 @@ public class LoginActivity extends AppCompatActivity {
         etUsuario = findViewById(R.id.etUsuario);
         etContrasena = findViewById(R.id.etContrasena);
         btnLogin = findViewById(R.id.btnLogin);
-        togglePassword = findViewById(R.id.togglePassword); // ← ojito
+        // togglePassword = findViewById(R.id.togglePassword); // ← COMENTADO: El TextView "ojito" ya no existe
 
         // Acción al hacer clic en el botón de login
         btnLogin.setOnClickListener(view -> validarLogin());
 
-        // Acción para mostrar u ocultar contraseña
+        // Ya no necesitas manejar el ojito manualmente, porque el TextInputLayout lo hace automáticamente
+        /*
         togglePassword.setOnClickListener(v -> {
             if (etContrasena.getInputType() == (InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD)) {
                 etContrasena.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
@@ -49,6 +50,7 @@ public class LoginActivity extends AppCompatActivity {
             }
             etContrasena.setSelection(etContrasena.getText().length()); // mantén el cursor al final
         });
+        */
 
         // Ajustes visuales para barras del sistema
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
