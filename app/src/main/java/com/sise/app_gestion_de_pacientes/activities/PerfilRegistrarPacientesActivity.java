@@ -58,6 +58,7 @@ public class PerfilRegistrarPacientesActivity extends AppCompatActivity {
         pacienteViewModel.getInsertarPacienteStatus().observe(this, success -> {
             if (success == null || !success) {
                 Toast.makeText(this, Message.INTENTAR_MAS_TARDE, Toast.LENGTH_LONG).show();
+
                 return;
             }
 

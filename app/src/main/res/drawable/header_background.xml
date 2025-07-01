@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Fondo blanco -->
+    <solid android:color="@android:color/white"/>
+
+    <!-- Bordes redondeados -->
+    <corners android:radius="12dp"/>
+
+    <!-- Borde azulito -->
+    <stroke
+        android:width="2dp"
+        android:color="#2196F3"/> <!-- Cambia este color por el tono azul que prefieras -->
+
+    <!-- Sombra opcional si quieres relieve
+    <padding
+        android:left="8dp"
+        android:top="8dp"
+        android:right="8dp"
+        android:bottom="8dp"/> -->
+</shape>

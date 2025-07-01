@@ -1,35 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.PerfilRegistrarPacientesActivity">
-    <!-- Título -->
-    <TextView
-        android:id="@+id/tv_titulo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Registrar Paciente"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@color/colorPrimario"
-        android:textStyle="bold"
-        android:layout_marginTop="32dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- Contenedor con CardView para agrupar los campos -->
+    <!-- CARDVIEW principal -->
     <androidx.cardview.widget.CardView
         android:id="@+id/card_formulario"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:background="@android:color/white"
+        android:layout_margin="24dp"
         app:cardCornerRadius="16dp"
-        app:cardElevation="6dp"
-        app:layout_constraintTop_toBottomOf="@id/tv_titulo"
+        app:cardElevation="8dp"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
@@ -37,13 +24,65 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="24dp">
+
+            <!-- Encabezado: Ícono + Textos -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <!-- Ícono -->
+                <ImageView
+                    android:id="@+id/iv_paciente"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/ico_paciente"
+                    android:contentDescription="Icono Paciente" />
+
+                <!-- Títulos -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="16dp">
+
+                    <TextView
+                        android:id="@+id/tv_titulo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Registrar Paciente"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimario" />
+
+                    <TextView
+                        android:id="@+id/tv_subtitulo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Complete sus datos"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="4dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Separador -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray"
+                android:alpha="0.2"/>
+
+            <!-- Formulario -->
             <Spinner
                 android:id="@+id/spn_tipo_documento"
                 style="@style/Spinner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp" />
+                android:layout_marginTop="16dp"/>
 
             <EditText
                 android:id="@+id/et_numero_documento"
@@ -74,8 +113,8 @@
                 android:id="@+id/spn_sexo"
                 style="@style/Spinner"
                 android:layout_width="match_parent"
-                android:layout_height="39dp"
-                android:layout_marginTop="12dp" />
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"/>
 
             <EditText
                 android:id="@+id/et_fecha_nacimiento"
@@ -113,6 +152,7 @@
                 style="@style/EditText"
                 android:layout_marginTop="12dp"/>
 
+            <!-- Botón Guardar -->
             <Button
                 android:id="@+id/btn_guardar"
                 android:onClick="onClickRegistrarPaciente"
@@ -125,4 +165,5 @@
                 android:layout_marginBottom="8dp"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

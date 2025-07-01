@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -7,72 +8,73 @@
     android:layout_height="match_parent"
     tools:context=".activities.MenuActivity">
 
-    <!-- Cabecera sin CardView -->
-    <FrameLayout
+    <!-- CABECERA -->
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/headerContainer"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="220dp"
         android:background="@drawable/welcome_gradient_light"
-        android:padding="24dp"
+        android:padding="16dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <!-- Cruz roja decorativa apagada -->
-        <ImageView
-            android:id="@+id/redCrossBackground"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
-            android:src="@drawable/cruzroja"
-            android:scaleType="centerCrop"
-            android:alpha="0.15"
-            android:layout_gravity="end|bottom"
-            android:translationY="40dp"
-            android:translationX="40dp" />
-
-        <!-- Contenido principal -->
+        <!-- Título -->
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:id="@+id/titleContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp">
 
-            <!-- Fila superior: ícono + texto -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical"
-                android:layout_marginBottom="16dp">
-
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/ic_cross_white"
-                    android:layout_marginEnd="8dp" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="meditrack"
-                    android:textColor="#FFFFFF"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
-            <!-- Lema o título -->
             <TextView
-                android:id="@+id/greeting"
+                android:id="@+id/title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tu Salud, Nuestra Prioridad"
-                android:textColor="#FFFFFF"
-                android:textSize="22sp"
+                android:text="MediTrack"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
                 android:textStyle="bold" />
-        </LinearLayout>
-    </FrameLayout>
 
-    <!-- BOTÓN REGISTRAR PACIENTE -->
+            <ImageView
+                android:id="@+id/redCross"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/cruzroja" />
+        </LinearLayout>
+
+        <!-- Subtítulo -->
+        <TextView
+            android:id="@+id/greeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Tu salud, Nuestra Prioridad"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleContainer" />
+
+        <!-- Imagen decorativa -->
+        <ImageView
+            android:id="@+id/doctorImage"
+            android:layout_width="160dp"
+            android:layout_height="200dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/doctor_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- BOTÓN Registrar Pacientes -->
     <LinearLayout
         android:id="@+id/btnRegisterPatient"
         android:layout_width="0dp"
@@ -84,27 +86,27 @@
         android:layout_marginTop="24dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
+        android:onClick="onClickPerfilRegistrarPacientes"
         app:layout_constraintTop_toBottomOf="@id/headerContainer"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
         <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/cora"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ico_paciente"
             android:layout_marginEnd="12dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Registrar Pacientes"
-            android:onClick="onClickPerfilRegistrarPacientes"
-            android:textColor="#FFFFFF"
+            android:textColor="@android:color/white"
             android:textSize="16sp"
             android:textStyle="bold" />
     </LinearLayout>
 
-    <!-- BOTÓN REGISTRAR MEDICO -->
+    <!-- BOTÓN Registrar Médico -->
     <LinearLayout
         android:id="@+id/btnRegisterMedico"
         android:layout_width="0dp"
@@ -113,26 +115,27 @@
         android:background="@drawable/button_yellow_rounded"
         android:padding="16dp"
         android:gravity="center_vertical"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
+        android:onClick="onClickPerfilRegistrarMedico"
         app:layout_constraintTop_toBottomOf="@id/btnRegisterPatient"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
         <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/logo"
-            android:layout_marginEnd="12dp"/>
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_medico"
+            android:layout_marginEnd="12dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Registrar Medicos"
-            android:onClick="onClickPerfilRegistrarMedico"
-            android:textColor="#FFFFFF"
+            android:text="Registrar Médicos"
+            android:textColor="@android:color/white"
             android:textSize="16sp"
             android:textStyle="bold" />
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
