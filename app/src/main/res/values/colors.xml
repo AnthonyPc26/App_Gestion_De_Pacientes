@@ -7,5 +7,6 @@
     <color name="fondo_claro">#F9F9F9</color>
     <color name="blanco">#FFFFFF</color>
     <color name="purple_500">#6200EE</color>
+    <color name="gris_oscuro">#212121</color>
 
 </resources>
