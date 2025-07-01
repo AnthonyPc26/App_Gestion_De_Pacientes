@@ -2,26 +2,26 @@ package com.sise.app_gestion_de_pacientes.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
+import android.widget.Switch;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import androidx.lifecycle.ViewModelProvider;
 
 import com.sise.app_gestion_de_pacientes.R;
+ import com.sise.app_gestion_de_pacientes.viewmodel.UsuarioViewModel;
 
 public class LoginActivity extends AppCompatActivity {
 
     private EditText etUsuario, etContrasena;
+    private Switch switchAdmin;
     private Button btnLogin;
-    // private TextView togglePassword; // ← COMENTADO: Ya no usamos ojito manual
+
+    private UsuarioViewModel usuarioViewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,35 +29,34 @@ public class LoginActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_login);
 
-        // Referencias a los elementos de la vista
         etUsuario = findViewById(R.id.etUsuario);
         etContrasena = findViewById(R.id.etContrasena);
+        switchAdmin = findViewById(R.id.switchAdmin);
         btnLogin = findViewById(R.id.btnLogin);
-        // togglePassword = findViewById(R.id.togglePassword); // ← COMENTADO: El TextView "ojito" ya no existe
 
-        // Acción al hacer clic en el botón de login
-        btnLogin.setOnClickListener(view -> validarLogin());
+        usuarioViewModel = new ViewModelProvider(this).get(UsuarioViewModel.class);
 
-        // Ya no necesitas manejar el ojito manualmente, porque el TextInputLayout lo hace automáticamente
-        /*
-        togglePassword.setOnClickListener(v -> {
-            if (etContrasena.getInputType() == (InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD)) {
-                etContrasena.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
-                togglePassword.setText("🙈");
+        usuarioViewModel.getUsuarioLoginLiveData().observe(this, usuario -> {
+            if (usuario == null) {
+                Toast.makeText(this, "Credenciales incorrectas", Toast.LENGTH_SHORT).show();
             } else {
-                etContrasena.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
-                togglePassword.setText("👁️");
+                String rol = usuario.getRol().getNombreRol().toUpperCase();
+                if (rol.equals("ADMINISTRADOR")) {
+                    Intent intent = new Intent(this, PerfilAdministradorActivity.class);
+                    startActivity(intent);
+                    finish();
+                } else if (rol.equals("DOCTOR")) {
+                    Intent intent = new Intent(this, MenuActivity.class);
+                    intent.putExtra("nombreUsuario", usuario.getUsuario());
+                    startActivity(intent);
+                    finish();
+                } else {
+                    Toast.makeText(this, "Rol no reconocido", Toast.LENGTH_SHORT).show();
+                }
             }
-            etContrasena.setSelection(etContrasena.getText().length()); // mantén el cursor al final
         });
-        */
 
-        // Ajustes visuales para barras del sistema
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+        btnLogin.setOnClickListener(view -> validarLogin());
     }
 
     private void validarLogin() {
@@ -68,34 +67,17 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(this, "Ingrese su usuario", Toast.LENGTH_SHORT).show();
             return;
         }
-
         if (contrasena.isEmpty()) {
             Toast.makeText(this, "Ingrese su contraseña", Toast.LENGTH_SHORT).show();
             return;
         }
 
-        // Validación simple
-        if ((usuario.equals("admin") && contrasena.equals("123456")) ||
-                (usuario.equals("doctor.diaz") && contrasena.equals("bts123"))) {
-
-            Toast.makeText(this, "¡Login exitoso!", Toast.LENGTH_SHORT).show();
-
-            Intent intent = new Intent(this, MenuActivity.class);
-            intent.putExtra("nombreUsuario", usuario); // Enviar el nombre
-            startActivity(intent);
-            finish();
-
-        } else {
-            Toast.makeText(this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show();
-        }
+        String rol = switchAdmin.isChecked() ? "ADMINISTRADOR" : "DOCTOR";
+        usuarioViewModel.loginUsuario(usuario, contrasena, rol);
     }
 
-    // Este método ya no se necesita, puedes borrarlo si quieres
-    public void onClickMenuActivity(View view){
-        Intent intent = new Intent(this, MenuActivity.class);
-        EditText etUsuario = findViewById(R.id.etUsuario);
-        String nombreUsuario = etUsuario.getText().toString();
-        intent.putExtra("nombre_usuario", nombreUsuario);
+    public void irARegistrarUsuario(View view) {
+        Intent intent = new Intent(this, PerfilRegistrarUsuarioActivity.class);
         startActivity(intent);
     }
 }

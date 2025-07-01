@@ -31,6 +31,12 @@
             android:name=".activities.PerfilRegistrarMedicoActivity"
             android:exported="false" />
         <activity
+            android:name=".activities.PerfilRegistrarUsuarioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.PerfilAdministradorActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

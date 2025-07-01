@@ -14,6 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 import com.sise.app_gestion_de_pacientes.activities.LoginActivity;
 import com.sise.app_gestion_de_pacientes.activities.MenuActivity;
 import com.sise.app_gestion_de_pacientes.activities.PerfilRegistrarPacientesActivity;
+import com.sise.app_gestion_de_pacientes.activities.PerfilRegistrarUsuarioActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -40,6 +41,11 @@ public class MainActivity extends AppCompatActivity {
         Intent intent= new Intent(this, LoginActivity.class);
         startActivity(intent);
         //   finish();
+    }
+
+    public void onClickPerfilUsuario(View view){
+        Intent intent= new Intent(this, PerfilRegistrarUsuarioActivity.class);
+        startActivity(intent);
     }
 
 
