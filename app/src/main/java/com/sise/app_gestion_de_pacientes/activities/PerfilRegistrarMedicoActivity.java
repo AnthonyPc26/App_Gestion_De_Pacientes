@@ -1,7 +1,11 @@
 package com.sise.app_gestion_de_pacientes.activities;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
@@ -9,6 +13,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.sise.app_gestion_de_pacientes.R;
@@ -39,7 +44,11 @@ public class PerfilRegistrarMedicoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_perfil_registrar_medico);
 
-        // Inicialización de vistas
+        // ✅ Toolbar
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        // Inputs
         etNumeroDocumento = findViewById(R.id.et_numero_documento);
         etNombres = findViewById(R.id.et_nombres);
         etApellidos = findViewById(R.id.et_apellidos);
@@ -48,7 +57,7 @@ public class PerfilRegistrarMedicoActivity extends AppCompatActivity {
         spTipoDocumento = findViewById(R.id.spn_tipo_documento);
         spEspecialidad = findViewById(R.id.spn_especialidad);
 
-        // Adaptador para tipo de documento
+        // Spinner tipo documento
         ArrayAdapter<CharSequence> adapterTipoDoc = ArrayAdapter.createFromResource(
                 this, R.array.tipo_documento_array, android.R.layout.simple_spinner_item);
         adapterTipoDoc.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -58,7 +67,7 @@ public class PerfilRegistrarMedicoActivity extends AppCompatActivity {
         medicoViewModel = new ViewModelProvider(this).get(MedicoViewModel.class);
         especialidadViewModel = new ViewModelProvider(this).get(EspecialidadViewModel.class);
 
-        // Observador de especialidades
+        // Observadores
         especialidadViewModel.getEspecialidades().observe(this, especialidades -> {
             if (especialidades != null && !especialidades.isEmpty()) {
                 especialidadesList = especialidades;
@@ -68,12 +77,10 @@ public class PerfilRegistrarMedicoActivity extends AppCompatActivity {
                 spEspecialidad.setAdapter(adapter);
                 Log.i(TAG, "Especialidades cargadas: " + especialidades.size());
             } else {
-                Log.w(TAG, "No se recibieron especialidades desde el API.");
-                Toast.makeText(this, "No se encontraron especialidades disponibles.", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "No se encontraron especialidades.", Toast.LENGTH_LONG).show();
             }
         });
 
-        // Error en caso no cargue
         especialidadViewModel.getError().observe(this, error -> {
             if (error != null) {
                 Log.e(TAG, "Error al cargar especialidades: " + error);
@@ -81,25 +88,47 @@ public class PerfilRegistrarMedicoActivity extends AppCompatActivity {
             }
         });
 
-        // Cargar especialidades desde la API
         especialidadViewModel.cargarEspecialidades();
 
-        // Observador para resultado de inserción
         medicoViewModel.getInsertarMedicoStatus().observe(this, success -> {
-            if (success == null || !success) {
-                Toast.makeText(getApplicationContext(), Message.INTENTAR_MAS_TARDE, Toast.LENGTH_LONG).show();
-                return;
+            if (success != null && success) {
+                Toast.makeText(this, "¡Médico registrado correctamente!", Toast.LENGTH_LONG).show();
+                finish();
+            } else {
+                Toast.makeText(this, Message.INTENTAR_MAS_TARDE, Toast.LENGTH_LONG).show();
             }
-            Toast.makeText(getApplicationContext(), "¡Médico registrado correctamente!", Toast.LENGTH_LONG).show();
-            finish(); // o navega a otra pantalla si corresponde
         });
+    }
 
+    // ✅ Menú en toolbar
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_app, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.menu_logout) {
+            cerrarSesion();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void cerrarSesion() {
+        SharedPreferences prefs = getSharedPreferences("APP_PREFS", MODE_PRIVATE);
+        prefs.edit().remove("usuario_logueado").apply();
+
+        Intent intent = new Intent(this, LoginActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+        finish();
     }
 
     public void onClickRegistrarMedico(View view) {
         Medico medico = validarCampos(view);
         if (medico != null) {
-            Log.i(TAG, "Validación exitosa. Registrando médico...");
             medicoViewModel.insertarMedico(medico);
         }
     }
@@ -119,20 +148,18 @@ public class PerfilRegistrarMedicoActivity extends AppCompatActivity {
             mostrarError(view, "Seleccione un tipo de documento válido.");
             return null;
         }
-
         if (!soloNumeros.matcher(numeroDocumento).matches()) {
-            mostrarError(view, "Número de documento inválido (mínimo 8 dígitos).");
+            mostrarError(view, "Número de documento inválido.");
             return null;
         }
-
         if (!soloLetras.matcher(nombres).matches()) {
-            mostrarError(view, "Nombres deben contener solo letras.");
+            mostrarError(view, "Nombres inválidos.");
             return null;
         }
 
         String[] partesApellidos = apellidos.split(" ");
         if (partesApellidos.length < 2) {
-            mostrarError(view, "Ingrese apellidos completos: paterno y materno.");
+            mostrarError(view, "Ingrese apellidos completos.");
             return null;
         }
 
@@ -140,17 +167,17 @@ public class PerfilRegistrarMedicoActivity extends AppCompatActivity {
         String apellidoMaterno = partesApellidos[1];
 
         if (!soloLetras.matcher(apellidoPaterno).matches() || !soloLetras.matcher(apellidoMaterno).matches()) {
-            mostrarError(view, "Apellidos inválidos. Solo letras.");
+            mostrarError(view, "Apellidos inválidos.");
             return null;
         }
 
         if (telefono.length() < 9) {
-            mostrarError(view, "Teléfono inválido (mínimo 9 dígitos).");
+            mostrarError(view, "Teléfono inválido.");
             return null;
         }
 
-        if (direccion.length() < 5) {
-            mostrarError(view, "Dirección inválida (mínimo 5 caracteres).");
+        if (direccion.length() < 3) {
+            mostrarError(view, "Dirección inválida.");
             return null;
         }
 

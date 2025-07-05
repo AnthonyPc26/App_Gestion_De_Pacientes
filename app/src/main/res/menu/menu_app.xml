@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_notifications"
+        android:title="🔔 Notificaciones" />
+
+    <item
+        android:id="@+id/menu_profile"
+        android:title="🧑‍⚙ Perfil del administrador" />
+
+    <item
+        android:id="@+id/menu_history"
+        android:title="🗂 Historial de actividades" />
+
+    <item
+        android:id="@+id/menu_settings"
+        android:title="⚙ Configuración" />
+
+    <item
+        android:id="@+id/menu_refresh"
+        android:title="🔄 Actualizar/Sincronizar" />
+
+    <item
+        android:id="@+id/menu_logout"
+        android:title="🚪 Cerrar sesión" />
+</menu>

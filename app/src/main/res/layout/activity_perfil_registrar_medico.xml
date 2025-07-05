@@ -8,6 +8,17 @@
     android:layout_height="match_parent"
     tools:context=".activities.PerfilRegistrarMedicoActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimario"
+        android:title="Registrar Médico"
+        android:titleTextColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
     <!-- CardView principal -->
     <androidx.cardview.widget.CardView
         android:id="@+id/card_formulario"

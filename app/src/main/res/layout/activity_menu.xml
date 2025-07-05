@@ -8,28 +8,47 @@
     android:layout_height="match_parent"
     tools:context=".activities.MenuActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#426BB4"
+        android:title="Menú Principal"
+        android:titleTextColor="@android:color/white"
+        app:titleTextAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
     <!-- CABECERA -->
+
+    <!-- BOTÓN Registrar Pacientes -->
+
+    <!-- BOTÓN Registrar Médico -->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/headerContainer"
         android:layout_width="0dp"
         android:layout_height="220dp"
+        android:layout_marginTop="64dp"
         android:background="@drawable/welcome_gradient_light"
         android:padding="16dp"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toTopOf="parent">
 
         <!-- Título -->
         <LinearLayout
             android:id="@+id/titleContainer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="24dp">
+            android:layout_marginTop="24dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <TextView
                 android:id="@+id/title"
@@ -74,28 +93,28 @@
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- BOTÓN Registrar Pacientes -->
     <LinearLayout
         android:id="@+id/btnRegisterPatient"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="@drawable/button_yellow_rounded"
-        android:padding="16dp"
-        android:gravity="center_vertical"
-        android:layout_marginTop="24dp"
         android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
+        android:background="@drawable/button_yellow_rounded"
+        android:gravity="center_vertical"
         android:onClick="onClickPerfilRegistrarPacientes"
-        app:layout_constraintTop_toBottomOf="@id/headerContainer"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/headerContainer">
 
         <ImageView
             android:layout_width="28dp"
             android:layout_height="28dp"
-            android:src="@drawable/ico_paciente"
-            android:layout_marginEnd="12dp" />
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/ico_paciente" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -106,28 +125,28 @@
             android:textStyle="bold" />
     </LinearLayout>
 
-    <!-- BOTÓN Registrar Médico -->
     <LinearLayout
         android:id="@+id/btnRegisterMedico"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="@drawable/button_yellow_rounded"
-        android:padding="16dp"
-        android:gravity="center_vertical"
-        android:layout_marginTop="12dp"
         android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="24dp"
+        android:background="@drawable/button_yellow_rounded"
+        android:gravity="center_vertical"
         android:onClick="onClickPerfilRegistrarMedico"
-        app:layout_constraintTop_toBottomOf="@id/btnRegisterPatient"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/btnRegisterPatient">
 
         <ImageView
             android:layout_width="28dp"
             android:layout_height="28dp"
-            android:src="@drawable/ic_medico"
-            android:layout_marginEnd="12dp" />
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/ic_medico" />
 
         <TextView
             android:layout_width="wrap_content"

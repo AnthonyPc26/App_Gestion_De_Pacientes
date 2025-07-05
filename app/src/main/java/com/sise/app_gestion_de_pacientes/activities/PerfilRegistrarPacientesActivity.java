@@ -2,18 +2,23 @@ package com.sise.app_gestion_de_pacientes.activities;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.sise.app_gestion_de_pacientes.R;
 import com.sise.app_gestion_de_pacientes.entities.Paciente;
+import com.sise.app_gestion_de_pacientes.shared.MenuUtil;
 import com.sise.app_gestion_de_pacientes.shared.Message;
 import com.sise.app_gestion_de_pacientes.viewmodel.PacienteViewModel;
 
@@ -34,6 +39,8 @@ public class PerfilRegistrarPacientesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Log.i(TAG, "Ejecutando onCreate()");
         setContentView(R.layout.activity_perfil_registrar_pacientes);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         spTipoDocumento = findViewById(R.id.spn_tipo_documento);
         etNumeroDocumento = findViewById(R.id.et_numero_documento);
@@ -150,5 +157,16 @@ public class PerfilRegistrarPacientesActivity extends AppCompatActivity {
     }
     private void mostrarError(View view, String mensaje) {
         Toast.makeText(view.getContext(), mensaje, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_app, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        return MenuUtil.onClickMenuItem(this, item) || super.onOptionsItemSelected(item);
     }
 }

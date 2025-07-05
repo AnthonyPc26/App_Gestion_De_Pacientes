@@ -9,7 +9,9 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.lifecycle.ViewModelProvider;
@@ -36,6 +38,8 @@ public class PerfilRegistrarUsuarioActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_perfil_registrar_usuario);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         etUsuario = findViewById(R.id.etUsuario);
         etCorreo = findViewById(R.id.etCorreo);
@@ -56,6 +60,19 @@ public class PerfilRegistrarUsuarioActivity extends AppCompatActivity {
             return insets;
         });
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(android.view.Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_app, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull android.view.MenuItem item) {
+        return com.sise.app_gestion_de_pacientes.shared.MenuUtil.onClickMenuItem(this, item)
+                || super.onOptionsItemSelected(item);
+    }
+
     private void cargarRolesEnSpinner() {
         RolRepository rolRepository = new RolRepository();
         rolRepository.obtenerRoles(new Callback<List<Rol>>() {
