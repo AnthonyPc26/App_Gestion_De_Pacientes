@@ -1,52 +1,36 @@
-# 👩‍⚕️ MediTrack – Gestión de Pacientes en Zonas de Emergencia 🚑
+![Captura de pantalla 2025-07-04 191338](https://github.com/user-attachments/assets/b8bea1a0-b6bf-4f89-9733-b04640967f38)
 
 ![Version](https://img.shields.io/badge/MediTrack-v1.0-blueviolet?style=for-the-badge)
 ![Estado](https://img.shields.io/badge/Estado-En%20Desarrollo-orange?style=for-the-badge)
 ![Plataforma](https://img.shields.io/badge/Plataforma-Android-green?style=for-the-badge)
 
-<table>
-  <tr>
-    <td>
-      🩺 <em>Aplicación médica móvil para profesionales que trabajan bajo presión.</em>
-    </td>
-    <td>
-<img src="https://raw.githubusercontent.com/AnthonyPc26/App_Gestion_De_Pacientes-GRUPO5/d7c1c679cb3fcd71708c4f3beec50243434369e8/ImagenesReadme/hello-android.gif" width="200">
-    </td>
-  </tr>
-</table>
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br><br>
 
----
-## 🧑‍🎓 Integrantes del Proyecto - Grupo 5
-
-<table>
-  <tr>
-    <td style="vertical-align: top; padding-right: 30px;">
-      <ul style="list-style: none; padding: 0; font-size: 16px; line-height: 1.8;">
-        <li> 👨‍💻 <strong>Pachas Contreras, Anthony</strong></li>
-        <li> 👨‍💻 <strong>Ramos Chavez, Jesus</strong></li>
-        <li> 👨‍💻 <strong>Diaz Castaneda, Jose Manuel</strong></li>
-        <li> 👨‍💻 <strong>Ramirez Chacchi, Jordy</strong></li>
-        <li> 👨‍💻 <strong>Leon Chuquimajo, Roberth</strong></li>
-      </ul>
-    </td>
-    <td>
-      <img src="https://raw.githubusercontent.com/AnthonyPc26/App_Gestion_De_Pacientes-GRUPO5/main/ImagenesReadme/grupo.gif" width="450">
-    </td>
-  </tr>
-</table>
+## <picture><img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/about_me.gif?raw=true" width = 50px></picture> Integrantes
 
 
+<img align="right" width=200px height=200px alt="side_sticker" src="https://media.giphy.com/media/TEnXkcsHrP4YedChhA/giphy.gif" />
 
----
+✔ 👨‍💻 Pachas Contreras, Anthony <br> 
+✔ 👨‍💻 Ramos Chavez, Jesus<br>
+✔ 👨‍💻 Diaz Castaneda, Jose Manuel<br>
+✔ 👨‍💻 Ramirez Chacchi, Jordy<br>
+✔ 👨‍💻 Leon Chuquimajo, Roberth<br>
 
-## 🩺 Alcance del Proyecto – MediTrack
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-**MediTrack** es una aplicación móvil orientada a la **gestión de pacientes en zonas de emergencia y atención médica rápida**. Su enfoque principal es brindar a los profesionales de salud una herramienta **ágil, intuitiva y segura** para el registro, seguimiento y localización de pacientes dentro de entornos hospitalarios de alta presión como:
+## 📌 Descripción del Proyecto
 
-- 🏥 Emergencias  
-- 🧪 Triaje  
-- 🛏️ Unidades de Cuidados Intensivos (UCI)  
-- 🏃 Clínicas de atención rápida
+**MediTrack** es una aplicación Android diseñada para la **gestión médica completa** en centros de salud, enfocada en **zonas de emergencia**. Integra funcionalidades para **usuarios médicos** y **administradores**, permitiendo un control eficiente sobre:
+
+- Registro de pacientes 🧍‍♂️
+- Control y gestión de médicos 🩺
+- Administración de medicamentos 💊
+- Programación de citas 📅
+- Reportes y control de especialidades 📊
+- Gestión de usuarios según roles 🔐
+
+El sistema incluye autenticación de usuarios y permisos por rol, garantizando seguridad y control en el acceso a funcionalidades sensibles.
 
 🔐
 Dado que MediTrack está pensada para entornos de atención inmediata y colaborativa, no se ha implementado un sistema de login de usuarios. Esto se debe a que:
@@ -57,14 +41,16 @@ La app se asume como uso interno del personal médico que comparte un mismo disp
 
 
 
----
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
 
 ## 🎯 Objetivo General
 
 Desarrollar una aplicación móvil que permita a los profesionales de la salud gestionar y acceder rápidamente a la información médica y de localización de los pacientes, incluyendo historial clínico detallado, citas médicas y ubicación interna en tiempo real, contribuyendo a una atención más rápida, organizada y segura en contextos de emergencia.
 
 
----
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
 
 ## 🎯 Objetivos Específicos
 
@@ -76,57 +62,73 @@ Desarrollar una aplicación móvil que permita a los profesionales de la salud g
 
 
 
----
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
 
 ## 📱 Prototipos de las Pantallas (Mockups)
 
-| Bienvenida | Menú Principal | Registrar Paciente |
+| Splash | Registro | Inicio de sesion |
 |-----------|----------------|---------------------|
-| ![Bienvenida](https://raw.githubusercontent.com/AnthonyPc26/App_Gestion_De_Pacientes-GRUPO5/8b66bc825c6198e3c96d1ac90d691d8bdb99b220/Bienvenida.png) | ![Menú](https://github.com/AnthonyPc26/App_Gestion_De_Pacientes/blob/d14c5721185afccb7e185722515bb23b8fd71def/ImagenesReadme/menucompleto.jpg) | ![Registro](https://raw.githubusercontent.com/AnthonyPc26/App_Gestion_De_Pacientes-GRUPO5/1224c5a46865d35ea19f2df9efa64bb45200ff3c/registrarpacientes.png) |
+| ![Splash](https://github.com/user-attachments/assets/369b8709-a0bb-4703-9f56-73ab7f437c45) | ![Registro](https://github.com/user-attachments/assets/2e2f1bc3-25c5-4bcb-a60b-8b34bcd78be3) |![incio de sesion](https://github.com/user-attachments/assets/acbc5520-096e-4667-8567-a8c31099ed9b)
+|
 
-| Registrar Médico | Historial Médico | Citas Médicas |
+| Menu | Registrar paciente | Registrar medico |
 |------------------|------------------|---------------|
-| ![Registrar Médico](https://raw.githubusercontent.com/AnthonyPc26/App_Gestion_De_Pacientes-GRUPO5/main/ImagenesReadme/registrarMedico.png) | ![Historial Médico](https://raw.githubusercontent.com/AnthonyPc26/App_Gestion_De_Pacientes-GRUPO5/main/ImagenesReadme/historialMedico.png) | ![Citas Médicas](https://raw.githubusercontent.com/AnthonyPc26/App_Gestion_De_Pacientes-GRUPO5/main/ImagenesReadme/citaMedicas.png) |
+| ![menu](https://github.com/user-attachments/assets/e60c3a72-fa72-4309-a170-b7466756baab) | ![Registrar paciente](https://github.com/user-attachments/assets/2e3ee2d4-7cd1-48b7-a203-675a332be494) | ![resgistrar medico](https://github.com/user-attachments/assets/dd9ef275-c6aa-4b93-b5d2-7c758fe56189) | 
 
 | Ubicación del Paciente | Configuración |
 |------------------------|----------------|
 | ![Ubicación](https://raw.githubusercontent.com/AnthonyPc26/App_Gestion_De_Pacientes-GRUPO5/main/ImagenesReadme/ubicacionPaciente.png) | ![Configuración](https://raw.githubusercontent.com/AnthonyPc26/App_Gestion_De_Pacientes-GRUPO5/main/ImagenesReadme/configuracion.png) |
 
----
 
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br><br>
 
-## 🛠️ Aspectos Técnicos del Proyecto
+<h2>🛠️ | Aspectos Técnicos del Proyecto </h2>
+<table>
+    <tr>
+        <td style="font-weight: bold; padding-right: 10px; vertical-align: center; border: none;">📲 Frontend (App):</td>
+        <td><img height="40" src="https://skillicons.dev/icons?i=androidstudio,figma,gradle "/></td>
+    </tr>
+    <tr>
+        <td style="font-weight: bold; padding-right: 10px; vertical-align: center;">⚙️ Backend (API REST):</td>
+        <td><img height="40" src="https://skillicons.dev/icons?i=ts,nodejs,express  "/></td>
+    </tr>
+    <tr>
+        <td style="font-weight: bold; padding-right: 10px; vertical-align: center; border: none;">🗄️ Base de Datos:</td>
+        <td><img height="40" src="https://skillicons.dev/icons?i=postgresql"/></td>
+    </tr>
+    <tr>
+        <td style="font-weight: bold; padding-right: 10px; vertical-align: center; border: none;">🔧 Herramientas Adicionales:</td>
+        <td><img height="40" src="https://skillicons.dev/icons?i=vscode,github,git,postman"/></td>
+    </tr>
+</table>
+<br>
 
-| 📲 Frontend (App) | ⚙️ Backend (API REST) | 🗄️ Base de Datos |
-|------------------|------------------------|------------------|
-| Android Studio  | Node.js + Express | PostgreSQL |
-| Material Design | TypeScript | TypeORM |
-| Gradle | Swagger | pgAdmin |
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+## 🐍 Una serpiente devorando mis contribuciones
+	
+<p align = "center">
+	<img src = "https://github.com/7oSkaaa/7oSkaaa/blob/output/github-contribution-grid-snake.svg?" alt = "Snake Game"/>
+</p>
 
-### 🔧 Herramientas Adicionales:
-- Git y GitHub (Control de versiones)  
-- Postman /  (Testeo de API)  
-- Visual Studio Code
-
----
-
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 ## 📝 Presentación de la Base de Datos
 
 ![Base de Datos](https://raw.githubusercontent.com/AnthonyPc26/App_Gestion_De_Pacientes-GRUPO5/main/ImagenesReadme/BDInventrack.jpg)
 
----
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
 
 ## 🌐 Enlace al Repositorio del Backend
 
 🔗 [Repositorio Backend en GitHub](https://github.com/josma18/gestion_paciente_api)
 
----
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-## 👨🏻‍💻 Conclusión
+</div>
 
-**MediTrack** busca **transformar la gestión médica en zonas críticas**, ofreciendo una solución moderna, rápida y segura para el seguimiento integral de pacientes. Ideal para equipos médicos que necesitan precisión y eficiencia en contextos de alta presión. Es una herramienta pensada para **marcar la diferencia donde más importa**.
+![footer](https://github.com/GovindSingh9447/GovindSingh9447/blob/main/WEBP/footer.webp)
 
----
 
-🎓 *Proyecto académico con enfoque profesional – ¡Hecho con pasión y dedicación!*
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
