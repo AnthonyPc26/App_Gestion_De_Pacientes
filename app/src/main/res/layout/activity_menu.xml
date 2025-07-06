@@ -20,12 +20,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- CABECERA -->
-
-    <!-- BOTÓN Registrar Pacientes -->
-
-    <!-- BOTÓN Registrar Médico -->
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/headerContainer"
         android:layout_width="0dp"
@@ -34,11 +28,9 @@
         android:background="@drawable/welcome_gradient_light"
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <!-- Título -->
         <LinearLayout
             android:id="@+id/titleContainer"
             android:layout_width="wrap_content"
@@ -67,7 +59,6 @@
                 android:src="@drawable/cruzroja" />
         </LinearLayout>
 
-        <!-- Subtítulo -->
         <TextView
             android:id="@+id/greeting"
             android:layout_width="wrap_content"
@@ -80,7 +71,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/titleContainer" />
 
-        <!-- Imagen decorativa -->
         <ImageView
             android:id="@+id/doctorImage"
             android:layout_width="160dp"
@@ -93,6 +83,7 @@
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <!-- Botón Registrar Pacientes -->
     <LinearLayout
         android:id="@+id/btnRegisterPatient"
         android:layout_width="0dp"
@@ -106,7 +97,6 @@
         android:orientation="horizontal"
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/headerContainer">
 
@@ -125,6 +115,7 @@
             android:textStyle="bold" />
     </LinearLayout>
 
+    <!-- Botón Registrar Médico -->
     <LinearLayout
         android:id="@+id/btnRegisterMedico"
         android:layout_width="0dp"
@@ -138,7 +129,6 @@
         android:orientation="horizontal"
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnRegisterPatient">
 
@@ -156,5 +146,69 @@
             android:textSize="16sp"
             android:textStyle="bold" />
     </LinearLayout>
+
+    <!-- Botón Registrar Medicamentos -->
+    <LinearLayout
+        android:id="@+id/btnRegisterMedicamentos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/button_yellow_rounded"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnRegisterMedico"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/ic_medic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registrar Medicamentos"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Botón Registrar Citas -->
+    <LinearLayout
+        android:id="@+id/btnRegisterCitas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/button_yellow_rounded"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnRegisterMedicamentos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/calendar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registrar Citas"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
