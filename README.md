@@ -19,18 +19,14 @@
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-## 📌 Descripción del Proyecto
+## 🩺 Alcance del Proyecto – MediTrack
 
-**MediTrack** es una aplicación Android diseñada para la **gestión médica completa** en centros de salud, enfocada en **zonas de emergencia**. Integra funcionalidades para **usuarios médicos** y **administradores**, permitiendo un control eficiente sobre:
+**MediTrack** es una aplicación móvil orientada a la **gestión de pacientes en zonas de emergencia y atención médica rápida**. Su enfoque principal es brindar a los profesionales de salud una herramienta **ágil, intuitiva y segura** para el registro, seguimiento y localización de pacientes dentro de entornos hospitalarios de alta presión como:
 
-- Registro de pacientes 🧍‍♂️
-- Control y gestión de médicos 🩺
-- Administración de medicamentos 💊
-- Programación de citas 📅
-- Reportes y control de especialidades 📊
-- Gestión de usuarios según roles 🔐
-
-El sistema incluye autenticación de usuarios y permisos por rol, garantizando seguridad y control en el acceso a funcionalidades sensibles.
+- 🏥 Emergencias  
+- 🧪 Triaje  
+- 🛏️ Unidades de Cuidados Intensivos (UCI)  
+- 🏃 Clínicas de atención rápida
 
 🔐
 Dado que MediTrack está pensada para entornos de atención inmediata y colaborativa, no se ha implementado un sistema de login de usuarios. Esto se debe a que:
@@ -67,19 +63,17 @@ Desarrollar una aplicación móvil que permita a los profesionales de la salud g
 
 ## 📱 Prototipos de las Pantallas (Mockups)
 
-| Splash | Registro | Inicio de sesion |
-|-----------|----------------|---------------------|
-| ![Splash](https://github.com/user-attachments/assets/369b8709-a0bb-4703-9f56-73ab7f437c45) | ![Registro](https://github.com/user-attachments/assets/2e2f1bc3-25c5-4bcb-a60b-8b34bcd78be3) |![incio de sesion](https://github.com/user-attachments/assets/acbc5520-096e-4667-8567-a8c31099ed9b)
-|
+| Splash | Inicio de sesion | registro |
+|-----------|----------------|------------|
+| ![Splash](https://github.com/user-attachments/assets/369b8709-a0bb-4703-9f56-73ab7f437c45) |![incio de sesion](https://github.com/user-attachments/assets/acbc5520-096e-4667-8567-a8c31099ed9b) | ![Registro](https://github.com/user-attachments/assets/2e2f1bc3-25c5-4bcb-a60b-8b34bcd78be3)|
 
 | Menu | Registrar paciente | Registrar medico |
-|------------------|------------------|---------------|
-| ![menu](https://github.com/user-attachments/assets/e60c3a72-fa72-4309-a170-b7466756baab) | ![Registrar paciente](https://github.com/user-attachments/assets/2e3ee2d4-7cd1-48b7-a203-675a332be494) | ![resgistrar medico](https://github.com/user-attachments/assets/dd9ef275-c6aa-4b93-b5d2-7c758fe56189) | 
+|-----------|----------------|------------|
+|![menu](https://github.com/user-attachments/assets/2d934b8c-c17b-4322-99e7-24d62d8a1979) | ![Registrar paciente](https://github.com/user-attachments/assets/2e3ee2d4-7cd1-48b7-a203-675a332be494) | ![resgistrar medico](https://github.com/user-attachments/assets/dd9ef275-c6aa-4b93-b5d2-7c758fe56189) | 
 
-| Ubicación del Paciente | Configuración |
+| Agregar usuario | Configuración |
 |------------------------|----------------|
-| ![Ubicación](https://raw.githubusercontent.com/AnthonyPc26/App_Gestion_De_Pacientes-GRUPO5/main/ImagenesReadme/ubicacionPaciente.png) | ![Configuración](https://raw.githubusercontent.com/AnthonyPc26/App_Gestion_De_Pacientes-GRUPO5/main/ImagenesReadme/configuracion.png) |
-
+|![menu de registro](https://github.com/user-attachments/assets/3f1115e6-ff70-4070-9650-5e9bbcfe779f) | ![configuracion de menu](https://github.com/user-attachments/assets/0bdae0e0-0a67-4342-a4be-33e6b3430175) |
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br><br>
 
@@ -105,7 +99,7 @@ Desarrollar una aplicación móvil que permita a los profesionales de la salud g
 <br>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-## 🐍 Una serpiente devorando mis contribuciones
+🐍 Una serpiente devorando mis contribuciones
 	
 <p align = "center">
 	<img src = "https://github.com/7oSkaaa/7oSkaaa/blob/output/github-contribution-grid-snake.svg?" alt = "Snake Game"/>
@@ -115,7 +109,8 @@ Desarrollar una aplicación móvil que permita a los profesionales de la salud g
 
 ## 📝 Presentación de la Base de Datos
 
-![Base de Datos](https://raw.githubusercontent.com/AnthonyPc26/App_Gestion_De_Pacientes-GRUPO5/main/ImagenesReadme/BDInventrack.jpg)
+![base de datos](https://github.com/user-attachments/assets/fe31aea0-4911-46cf-9cfd-4b0e86e57231)
+
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
