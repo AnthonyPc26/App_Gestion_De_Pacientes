@@ -19,43 +19,32 @@
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-## 🩺 Alcance del Proyecto – MediTrack
+## 📌 Descripción del Proyecto
 
-**MediTrack** es una aplicación móvil orientada a la **gestión de pacientes en zonas de emergencia y atención médica rápida**. Su enfoque principal es brindar a los profesionales de salud una herramienta **ágil, intuitiva y segura** para el registro, seguimiento y localización de pacientes dentro de entornos hospitalarios de alta presión como:
+**MediTrack** es una aplicación Android diseñada para la **gestión médica ** en centros de salud, enfocada en **zonas de emergencia**. Integra funcionalidades para **usuarios médicos** y **administradores**, permitiendo un control eficiente sobre:
 
-- 🏥 Emergencias  
-- 🧪 Triaje  
-- 🛏️ Unidades de Cuidados Intensivos (UCI)  
-- 🏃 Clínicas de atención rápida
-
-🔐
-Dado que MediTrack está pensada para entornos de atención inmediata y colaborativa, no se ha implementado un sistema de login de usuarios. Esto se debe a que:
-
-El enfoque está en agilidad y simplicidad de uso, evitando pasos innecesarios.
-
-La app se asume como uso interno del personal médico que comparte un mismo dispositivo o entorno supervisado.
+- Registro de pacientes 🧍‍♂️
+- Control y gestión de médicos 🩺
+- Administración de medicamentos 💊
+- Gestión de usuarios según roles 🔐
+- Creacion de roles 👨‍⚕️👨‍💻
 
 
+El sistema incluye autenticación de usuarios y permisos por rol, garantizando seguridad y control en el acceso a funcionalidades sensibles.
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+---
 
+## 🔐 Roles del Sistema
 
+- 👤 **Administrador**: Crea usuarios (médicos o nuevos admins), accede a reportes, visualiza estadísticas por especialidad, y mantiene el control del sistema.
+- 👨‍⚕️ **Doctor**: Gestiona pacientes, registra citas, prescribe medicamentos y visualiza historiales clínicos.
+
+---
 ## 🎯 Objetivo General
 
-Desarrollar una aplicación móvil que permita a los profesionales de la salud gestionar y acceder rápidamente a la información médica y de localización de los pacientes, incluyendo historial clínico detallado, citas médicas y ubicación interna en tiempo real, contribuyendo a una atención más rápida, organizada y segura en contextos de emergencia.
+Desarrollar una aplicación Android que brinde a médicos y administradores herramientas seguras, rápidas y eficientes para la gestión de pacientes, médicos,  y medicamentos, enfocándose en situaciones de atención urgente o de emergencia.
 
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-
-## 🎯 Objetivos Específicos
-
-- ✅ Permitir el registro ágil de pacientes con sus datos personales y antecedentes médicos importantes (alergias, enfermedades crónicas).
-- ✅ Visualizar y actualizar de forma estructurada el historial médico, incluyendo diagnósticos, tratamientos, observaciones y medicamentos prescritos.
-- ✅ Gestionar citas médicas con registro de fecha, hora y motivo de atención.
-- ✅ Actualizar y consultar la ubicación del paciente dentro del centro médico para mejorar la trazabilidad.
-- ✅ Incluir configuraciones de accesibilidad como modo oscuro, notificaciones o alertas según la necesidad del profesional de salud.
-
+---
 
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
@@ -120,6 +109,9 @@ Desarrollar una aplicación móvil que permita a los profesionales de la salud g
 🔗 [Repositorio Backend en GitHub](https://github.com/josma18/gestion_paciente_api)
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+## 🎓 Conclusión
+
+**MediTrack** busca transformar la atención médica digital en entornos de emergencia, combinando simplicidad, seguridad y agilidad. Esta app académica con enfoque profesional ofrece a los equipos médicos una herramienta poderosa para la toma de decisiones clínicas y administrativas en tiempo real.
 
 </div>
 
