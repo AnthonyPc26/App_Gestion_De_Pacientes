@@ -52,17 +52,17 @@ Desarrollar una aplicación Android que brinde a médicos y administradores herr
 
 ## 📱 Prototipos de las Pantallas (Mockups)
 
-| Splash | Inicio de sesion | registro |
-|-----------|----------------|------------|
-| ![Splash](https://github.com/user-attachments/assets/369b8709-a0bb-4703-9f56-73ab7f437c45) |![incio de sesion](https://github.com/user-attachments/assets/acbc5520-096e-4667-8567-a8c31099ed9b) | ![Registro](https://github.com/user-attachments/assets/2e2f1bc3-25c5-4bcb-a60b-8b34bcd78be3)|
+| Splash | Inicio de sesión | Menú Admin |
+|--------|------------------|------------|
+| ![Splash](https://github.com/user-attachments/assets/369b8709-a0bb-4703-9f56-73ab7f437c45) | ![Inicio de sesión](https://github.com/user-attachments/assets/acbc5520-096e-4667-8567-a8c31099ed9b) | ![Menú Admin](https://github.com/user-attachments/assets/3f1115e6-ff70-4070-9650-5e9bbcfe779f) |
 
-| Menu | Registrar paciente | Registrar medico |
-|-----------|----------------|------------|
-|![menu](https://github.com/user-attachments/assets/2d934b8c-c17b-4322-99e7-24d62d8a1979) | ![Registrar paciente](https://github.com/user-attachments/assets/2e3ee2d4-7cd1-48b7-a203-675a332be494) | ![resgistrar medico](https://github.com/user-attachments/assets/dd9ef275-c6aa-4b93-b5d2-7c758fe56189) | 
+| Registrar usuario | Menú Doctor | Registrar paciente |
+|-------------------|-------------|---------------------|
+| ![Registrar usuario](https://github.com/user-attachments/assets/3f1115e6-ff70-4070-9650-5e9bbcfe779f) | ![Menú Doctor](https://github.com/user-attachments/assets/2d934b8c-c17b-4322-99e7-24d62d8a1979) | ![Registrar paciente](https://github.com/user-attachments/assets/2e3ee2d4-7cd1-48b7-a203-675a332be494) |
 
-| Agregar usuario | Configuración |
-|------------------------|----------------|
-|![menu de registro](https://github.com/user-attachments/assets/3f1115e6-ff70-4070-9650-5e9bbcfe779f) | ![configuracion de menu](https://github.com/user-attachments/assets/0bdae0e0-0a67-4342-a4be-33e6b3430175) |
+| Registrar médico | Registrar medicamento | Configuración |
+|------------------|------------------------|---------------|
+| ![Registrar médico](https://github.com/user-attachments/assets/dd9ef275-c6aa-4b93-b5d2-7c758fe56189) | *(Falta imagen de registrar medicamento)* | ![Configuración](https://github.com/user-attachments/assets/0bdae0e0-0a67-4342-a4be-33e6b3430175) |
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br><br>
 
