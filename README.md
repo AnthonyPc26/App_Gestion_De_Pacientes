@@ -62,7 +62,8 @@ Desarrollar una aplicación Android que brinde a médicos y administradores herr
 
 | Registrar médico | Registrar medicamento | Configuración |
 |------------------|------------------------|---------------|
-| ![Registrar médico](https://github.com/user-attachments/assets/dd9ef275-c6aa-4b93-b5d2-7c758fe56189) | *(Falta imagen de registrar medicamento)* | ![Configuración](https://github.com/user-attachments/assets/0bdae0e0-0a67-4342-a4be-33e6b3430175) |
+| ![Registrar médico](https://github.com/user-attachments/assets/dd9ef275-c6aa-4b93-b5d2-7c758fe56189) | ![Registrar medicamento](https://github.com/AnthonyPc26/App_Gestion_De_Pacientes/blob/37abf7a382e4bd449c5a967ba2c26acc7358ffbd/ImagenesReadme/medicamentos.png?raw=true) | ![Configuración](https://github.com/user-attachments/assets/0bdae0e0-0a67-4342-a4be-33e6b3430175) |
+
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br><br>
 
