@@ -107,7 +107,7 @@ Desarrollar una aplicación Android que brinde a médicos y administradores herr
 
 ## 🌐 Enlace al Repositorio del Backend
 
-🔗 [Repositorio Backend en GitHub](https://github.com/josma18/gestion_paciente_api)
+🔗 [Repositorio Backend en GitHub](https://github.com/josma18/gestion_paciente_api_BO)
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 ## 🎓 Conclusión
